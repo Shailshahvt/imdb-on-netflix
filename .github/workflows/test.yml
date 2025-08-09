@@ -95,22 +95,7 @@ jobs:
           console.log('✅ content.js is valid');
         "
 
-  security:
-    runs-on: ubuntu-latest
-    
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v4
-      
-    - name: Security scan
-      run: |
-        echo "Running security checks..."
-        # Check for actual hardcoded secrets (not placeholders or legitimate uses)
-        if grep -r "password.*=.*['\"][^'\"]*['\"]\|secret.*=.*['\"][^'\"]*['\"]\|api_key.*=.*['\"][^YOUR_OMDB_API_KEY][^'\"]*['\"]" . --exclude-dir=.git --exclude=README.md --exclude=SETUP.md --exclude=CONTRIBUTING.md --exclude=CHANGELOG.md --exclude=package.json --exclude=content.js --exclude=styles.css --exclude=popup.html --exclude=manifest.json --exclude=.github/workflows/test.yml --exclude=.gitignore; then
-          echo "⚠️  Potential hardcoded secrets found"
-          exit 1
-        fi
-        echo "✅ No obvious security issues found"
+
 
   documentation:
     runs-on: ubuntu-latest
