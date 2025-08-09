@@ -21,14 +21,13 @@ Thank you for your interest in contributing to imdb-on-netflix! This document pr
 - Git
 
 ### Local Development
-1. **Get an OMDB API key** from [omdbapi.com](http://www.omdbapi.com/)
-2. **Update `content.js`** with your API key
-3. **Load extension in Chrome**:
+1. **Download the repository** as ZIP or clone it
+2. **Load extension in Chrome**:
    - Go to `chrome://extensions/`
    - Enable "Developer mode"
    - Click "Load unpacked"
    - Select the imdb-on-netflix folder
-4. **Test on streaming platforms**
+3. **Test on streaming platforms**
 
 ## 📋 Contribution Guidelines
 
@@ -145,7 +144,7 @@ test: add unit tests for fuzzy matching
 - [ ] Test on Prime Video
 - [ ] Test on Disney+
 - [ ] Test on mobile Chrome (if applicable)
-- [ ] Test with different API keys
+- [ ] Test on different streaming platforms
 - [ ] Test with slow internet connection
 - [ ] Test with disabled cache
 
@@ -170,11 +169,10 @@ We're working on adding automated tests. For now, please:
 
 ## 🔒 Security
 
-### API Keys
-- **Never commit API keys** to the repository
-- **Use environment variables** for local development
-- **Document key requirements** clearly
-- **Test with invalid keys** to ensure proper error handling
+### Security
+- **Never commit sensitive data** to the repository
+- **Test thoroughly** before submitting changes
+- **Follow security best practices** for Chrome extensions
 
 ### Data Privacy
 - **Minimize data collection** to what's necessary

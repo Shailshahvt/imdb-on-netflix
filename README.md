@@ -25,41 +25,21 @@ A Chrome extension that displays **IMDb**, **Rotten Tomatoes**, and **Metascore*
 
 ## 🚀 Quick Start
 
-### 1. Clone the Repository
-```bash
-git clone https://github.com/Shailshahvt/imdb-on-netflix.git
-cd imdb-on-netflix
-```
+### 1. Download the Extension
+1. **Download** this repository as a ZIP file
+2. **Extract** the ZIP file to a folder on your computer
 
-### 2. Get Your Free API Key
-1. Visit [OMDB API](http://www.omdbapi.com/)
-2. Click "Get a free API key"
-3. Fill out the simple form (name, email)
-4. Check your email for the API key
+### 2. Install in Chrome
+1. **Open Chrome** and go to `chrome://extensions/`
+2. **Enable "Developer mode"** (toggle in top-right corner)
+3. **Click "Load unpacked"**
+4. **Select the extracted folder**
+5. **Done!** The extension will appear in your toolbar
 
-### 3. Configure the Extension
-1. Open `content.js`
-2. Find this line: `const OMDB_API_KEY = 'YOUR_OMDB_API_KEY';`
-3. Replace `'YOUR_OMDB_API_KEY'` with your actual API key
-4. Save the file
-
-### 4. Install in Chrome
-1. Open Chrome and go to `chrome://extensions/`
-2. Enable "Developer mode" (top-right toggle)
-3. Click "Load unpacked"
-4. Select the imdb-on-netflix folder
-5. The extension will appear in your toolbar
-
-### 5. Test It Out
-1. Visit [Netflix](https://netflix.com)
-2. Browse any movie/show section
-3. Look for rating overlays on content cards
-4. You should see ratings like:
-   ```
-   IMDb    ⭐ 8.5    1.2M votes
-   RT      🍅 89%    Critic
-   MC      📊 85     Critic
-   ```
+### 3. Start Using It
+1. **Visit Netflix**, Hotstar, Prime Video, or Disney+
+2. **Browse movies/shows** - you'll see ratings appear automatically
+3. **Enjoy!** Ratings from IMDb, Rotten Tomatoes, and Metascore will show on content cards
 
 ## 📊 Rating Sources
 
@@ -89,9 +69,10 @@ cd imdb-on-netflix
 - **Smart Caching**: 30-day cache with automatic cleanup
 - **Rate Limiting**: Respects API limits with exponential backoff
 
-### APIs Used
-- **OMDB API**: Free API providing IMDb, RT, and Metascore ratings
-- **Rate Limit**: 1,000 requests per day (free tier)
+### Data Sources
+- **IMDb**: User ratings and reviews
+- **Rotten Tomatoes**: Critic and audience scores
+- **Metascore**: Aggregated critic ratings
 
 ### Performance Features
 - **Concurrent Requests**: Fetches multiple ratings simultaneously
