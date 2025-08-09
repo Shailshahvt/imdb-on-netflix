@@ -1,6 +1,6 @@
 ---
 name: Feature request
-about: Suggest an idea for IMDBuddy
+about: Suggest an idea for imdb-on-netflix
 title: '[FEATURE] '
 labels: ['enhancement']
 assignees: ''

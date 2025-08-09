@@ -1,5 +1,5 @@
 {
-  "name": "imdbuddy",
+  "name": "imdb-on-netflix",
   "version": "4.0.0",
   "description": "A Chrome extension that displays IMDb, Rotten Tomatoes, and Metascore ratings directly on streaming platforms",
   "main": "content.js",
@@ -30,7 +30,7 @@
   },
   "contributors": [
     {
-      "name": "IMDBuddy Contributors",
+      "name": "imdb-on-netflix Contributors",
       "url": "https://github.com/Shailshahvt/imdb-on-netflix/graphs/contributors"
     }
   ],

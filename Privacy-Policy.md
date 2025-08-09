@@ -1,15 +1,15 @@
-# Privacy Policy for IMDBuddy
+# Privacy Policy for imdb-on-netflix
 
 **Last Updated: July 18, 2025**
 
 ## Overview
 
-IMDBuddy is a Chrome extension that displays IMDb ratings while browsing streaming platforms like Netflix, Hotstar, Prime Video, and others. This Privacy Policy explains how we collect, use, and protect your information when you use our extension.
+imdb-on-netflix is a Chrome extension that displays IMDb ratings while browsing streaming platforms like Netflix, Hotstar, Prime Video, and others. This Privacy Policy explains how we collect, use, and protect your information when you use our extension.
 
 ## Information We Collect
 
 ### Data Collection
-- **No Personal Information**: IMDBuddy does not collect any personally identifiable information (PII) such as names, email addresses, phone numbers, or payment information.
+- **No Personal Information**: imdb-on-netflix does not collect any personally identifiable information (PII) such as names, email addresses, phone numbers, or payment information.
 - **No User Accounts**: The extension does not require user registration or account creation.
 - **No Tracking**: We do not track your browsing history, personal preferences, or behavior across websites.
 
@@ -97,10 +97,10 @@ This extension complies with:
 
 ## Contact Information
 
-If you have any questions or concerns about this Privacy Policy or the IMDBuddy extension:
+If you have any questions or concerns about this Privacy Policy or the imdb-on-netflix extension:
 
 - **Developer**: Pankaj Tanwar
-- **GitHub**: https://github.com/pankajtanwarbanna/IMDBuddy
+- **GitHub**: https://github.com/Shailshahvt/imdb-on-netflix
 - **Issues**: Please report issues through GitHub Issues
 
 ## Data Minimization
@@ -112,4 +112,4 @@ IMDBuddy follows the principle of data minimization:
 
 ---
 
-**Note**: This Privacy Policy applies only to the IMDBuddy Chrome extension and does not cover any third-party websites or services that may be accessed through the extension.
+**Note**: This Privacy Policy applies only to the imdb-on-netflix Chrome extension and does not cover any third-party websites or services that may be accessed through the extension.

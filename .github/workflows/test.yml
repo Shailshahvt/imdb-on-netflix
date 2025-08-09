@@ -1,4 +1,4 @@
-name: Test IMDBuddy Extension
+name: Test imdb-on-netflix Extension
 
 on:
   push:

@@ -1,11 +1,11 @@
-# 🤝 Contributing to IMDBuddy
+# 🤝 Contributing to imdb-on-netflix
 
-Thank you for your interest in contributing to IMDBuddy! This document provides guidelines and information for contributors.
+Thank you for your interest in contributing to imdb-on-netflix! This document provides guidelines and information for contributors.
 
 ## 🚀 Quick Start
 
 1. **Fork the repository**
-2. **Clone your fork**: `git clone https://github.com/yourusername/IMDBuddy.git`
+2. **Clone your fork**: `git clone https://github.com/yourusername/imdb-on-netflix.git`
 3. **Create a branch**: `git checkout -b feature/amazing-feature`
 4. **Make your changes**
 5. **Test thoroughly**
@@ -27,7 +27,7 @@ Thank you for your interest in contributing to IMDBuddy! This document provides 
    - Go to `chrome://extensions/`
    - Enable "Developer mode"
    - Click "Load unpacked"
-   - Select the IMDBuddy folder
+   - Select the imdb-on-netflix folder
 4. **Test on streaming platforms**
 
 ## 📋 Contribution Guidelines
@@ -209,8 +209,8 @@ Contributors will be recognized in:
 
 ## 📄 License
 
-By contributing to IMDBuddy, you agree that your contributions will be licensed under the MIT License.
+By contributing to imdb-on-netflix, you agree that your contributions will be licensed under the MIT License.
 
 ---
 
-**Thank you for contributing to IMDBuddy!** 🎬✨
+**Thank you for contributing to imdb-on-netflix!** 🎬✨

@@ -1,8 +1,8 @@
-# 🎬 IMDBuddy - Smart Ratings for Streaming Platforms
+# 🎬 imdb-on-netflix - Smart Ratings for Streaming Platforms
 
 A Chrome extension that displays **IMDb**, **Rotten Tomatoes**, and **Metascore** ratings directly on streaming platforms like Netflix, Hotstar, Prime Video, and Disney+.
 
-![IMDBuddy Demo](images/demo.png)
+![imdb-on-netflix Demo](images/demo.png)
 
 ## ✨ Features
 
@@ -28,7 +28,7 @@ A Chrome extension that displays **IMDb**, **Rotten Tomatoes**, and **Metascore*
 ### 1. Clone the Repository
 ```bash
 git clone https://github.com/Shailshahvt/imdb-on-netflix.git
-cd IMDBuddy
+cd imdb-on-netflix
 ```
 
 ### 2. Get Your Free API Key
@@ -47,7 +47,7 @@ cd IMDBuddy
 1. Open Chrome and go to `chrome://extensions/`
 2. Enable "Developer mode" (top-right toggle)
 3. Click "Load unpacked"
-4. Select the IMDBuddy folder
+4. Select the imdb-on-netflix folder
 5. The extension will appear in your toolbar
 
 ### 5. Test It Out
@@ -174,7 +174,7 @@ Customize the overlay appearance in `styles.css`:
 ### Debug Mode
 Enable debug logging by opening browser console and looking for:
 ```
-IMDBuddy initialized for Netflix
+imdb-on-netflix initialized for Netflix
 Processing card with title data: {title: "Movie Title", type: "movie"}
 Received ratings: {imdb: {...}, omdb: {...}}
 ```
@@ -182,7 +182,7 @@ Received ratings: {imdb: {...}, omdb: {...}}
 ## 📁 Project Structure
 
 ```
-IMDBuddy/
+imdb-on-netflix/
 ├── content.js          # Main extension logic
 ├── popup.html          # Extension popup interface
 ├── styles.css          # Overlay and popup styling

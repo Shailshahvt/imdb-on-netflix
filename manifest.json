@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
-    "name": "IMDBuddy - IMDb & Rotten Tomatoes Ratings for Streaming",
-    "short_name": "IMDBuddy",
+    "name": "imdb-on-netflix - IMDb & Rotten Tomatoes Ratings for Streaming",
+    "short_name": "imdb-on-netflix",
     "version": "4.0.0",
     "author": "Shail Shah",
     "description": "Get instant IMDb and Rotten Tomatoes ratings while browsing Netflix, Hotstar, Prime Video & other streaming platforms.",
@@ -34,7 +34,7 @@
     ],
     "action": {
         "default_popup": "popup.html",
-        "default_title": "IMDBuddy - Smart Ratings for Streaming"
+        "default_title": "imdb-on-netflix - Smart Ratings for Streaming"
     },
     "icons": {
         "16": "images/icon.png",

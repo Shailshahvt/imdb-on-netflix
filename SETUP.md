@@ -1,4 +1,4 @@
-# 🚀 IMDBuddy Setup Guide
+# 🚀 imdb-on-netflix Setup Guide
 
 ## Getting Your Free OMDB API Key
 
@@ -16,7 +16,7 @@
 
 ### Step 3: Reload Extension
 1. **Go to**: `chrome://extensions/`
-2. **Find**: IMDBuddy extension
+2. **Find**: imdb-on-netflix extension
 3. **Click**: The refresh icon
 4. **Test**: Visit Netflix/Hotstar to see real ratings!
 
