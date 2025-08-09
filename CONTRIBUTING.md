@@ -203,9 +203,9 @@ Contributors will be recognized in:
 
 ## 📞 Getting Help
 
-- **Issues**: [GitHub Issues](https://github.com/yourusername/IMDBuddy/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/IMDBuddy/discussions)
-- **Contact**: [@the2ndfloorguy](https://x.com/intent/user?screen_name=the2ndfloorguy)
+- **Issues**: [GitHub Issues](https://github.com/Shailshahvt/imdb-on-netflix/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/Shailshahvt/imdb-on-netflix/discussions)
+- **Contact**: [@Shailshahvt](https://github.com/Shailshahvt)
 
 ## 📄 License
 

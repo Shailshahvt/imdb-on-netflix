@@ -24,25 +24,25 @@
     "omdb-api"
   ],
   "author": {
-    "name": "Pankaj Tanwar",
-    "email": "contact@pankajtanwar.in",
-    "url": "https://pankajtanwar.in"
+    "name": "Shail Shah",
+    "email": "shail.shah@example.com",
+    "url": "https://github.com/Shailshahvt"
   },
   "contributors": [
     {
       "name": "IMDBuddy Contributors",
-      "url": "https://github.com/yourusername/IMDBuddy/graphs/contributors"
+      "url": "https://github.com/Shailshahvt/imdb-on-netflix/graphs/contributors"
     }
   ],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/IMDBuddy.git"
+    "url": "https://github.com/Shailshahvt/imdb-on-netflix.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/IMDBuddy/issues"
+    "url": "https://github.com/Shailshahvt/imdb-on-netflix/issues"
   },
-  "homepage": "https://github.com/yourusername/IMDBuddy#readme",
+  "homepage": "https://github.com/Shailshahvt/imdb-on-netflix#readme",
   "engines": {
     "node": ">=14.0.0"
   },

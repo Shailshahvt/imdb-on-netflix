@@ -3,7 +3,7 @@
     "name": "IMDBuddy - IMDb & Rotten Tomatoes Ratings for Streaming",
     "short_name": "IMDBuddy",
     "version": "4.0.0",
-    "author": "Pankaj Tanwar",
+    "author": "Shail Shah",
     "description": "Get instant IMDb and Rotten Tomatoes ratings while browsing Netflix, Hotstar, Prime Video & other streaming platforms.",
     "permissions": [
         "storage"

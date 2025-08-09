@@ -132,9 +132,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## 📞 Support
 
 For issues, questions, or feature requests:
-- **GitHub Issues**: [Report a Bug](https://github.com/yourusername/IMDBuddy/issues)
-- **GitHub Discussions**: [Ask a Question](https://github.com/yourusername/IMDBuddy/discussions)
-- **Contact**: [@the2ndfloorguy](https://x.com/intent/user?screen_name=the2ndfloorguy)
+- **GitHub Issues**: [Report a Bug](https://github.com/Shailshahvt/imdb-on-netflix/issues)
+- **GitHub Discussions**: [Ask a Question](https://github.com/Shailshahvt/imdb-on-netflix/discussions)
+- **Contact**: [@Shailshahvt](https://github.com/Shailshahvt)
 
 ---
 

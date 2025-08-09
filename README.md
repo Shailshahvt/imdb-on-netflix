@@ -27,7 +27,7 @@ A Chrome extension that displays **IMDb**, **Rotten Tomatoes**, and **Metascore*
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/IMDBuddy.git
+git clone https://github.com/Shailshahvt/imdb-on-netflix.git
 cd IMDBuddy
 ```
 
@@ -228,13 +228,13 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- **Issues**: [GitHub Issues](https://github.com/yourusername/IMDBuddy/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/IMDBuddy/discussions)
-- **Contact**: [@the2ndfloorguy](https://x.com/intent/user?screen_name=the2ndfloorguy)
+- **Issues**: [GitHub Issues](https://github.com/Shailshahvt/imdb-on-netflix/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/Shailshahvt/imdb-on-netflix/discussions)
+- **Contact**: [@Shailshahvt](https://github.com/Shailshahvt)
 
 ## 🌟 Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=yourusername/IMDBuddy&type=Date)](https://star-history.com/#yourusername/IMDBuddy&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=Shailshahvt/imdb-on-netflix&type=Date)](https://star-history.com/#Shailshahvt/imdb-on-netflix&Date)
 
 ---
 
