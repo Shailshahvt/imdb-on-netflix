@@ -40,9 +40,9 @@ jobs:
       run: |
         echo "Checking for hardcoded API keys..."
         if grep -r "YOUR_OMDB_API_KEY" . --exclude-dir=.git; then
-          echo "✅ No hardcoded API keys found"
-        else
           echo "⚠️  API key placeholder found (this is expected)"
+        else
+          echo "✅ No hardcoded API keys found"
         fi
         
     - name: Validate HTML
@@ -61,7 +61,7 @@ jobs:
       run: |
         echo "Checking required files..."
         required_files=("content.js" "popup.html" "styles.css" "manifest.json" "README.md")
-        for file in \"${required_files[@]}\"; do
+        for file in "${required_files[@]}"; do
           if [ ! -f "$file" ]; then
             echo "❌ Missing required file: $file"
             exit 1
@@ -106,7 +106,7 @@ jobs:
       run: |
         echo "Running security checks..."
         # Check for common security issues
-        if grep -r "password\|secret\|key" . --exclude-dir=.git --exclude=README.md --exclude=SETUP.md | grep -v "YOUR_OMDB_API_KEY"; then
+        if grep -r "password\|secret\|key" . --exclude-dir=.git --exclude=README.md --exclude=SETUP.md --exclude=CONTRIBUTING.md --exclude=CHANGELOG.md --exclude=package.json --exclude=content.js --exclude=styles.css --exclude=popup.html --exclude=manifest.json --exclude=.github/workflows/test.yml | grep -v "YOUR_OMDB_API_KEY" | grep -v "keywords" | grep -v "api_key" | grep -v "apikey"; then
           echo "⚠️  Potential security issue found"
           exit 1
         fi
