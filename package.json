@@ -1,0 +1,83 @@
+{
+  "name": "imdbuddy",
+  "version": "4.0.0",
+  "description": "A Chrome extension that displays IMDb, Rotten Tomatoes, and Metascore ratings directly on streaming platforms",
+  "main": "content.js",
+  "scripts": {
+    "test": "echo \"No tests specified\" && exit 0",
+    "validate": "node -e \"const fs = require('fs'); const manifest = JSON.parse(fs.readFileSync('manifest.json', 'utf8')); console.log('✅ Manifest valid:', manifest.name, 'v' + manifest.version);\"",
+    "build": "echo \"Chrome extension - no build step required\"",
+    "lint": "echo \"Linting not configured\" && exit 0",
+    "format": "echo \"Formatting not configured\" && exit 0"
+  },
+  "keywords": [
+    "chrome-extension",
+    "netflix",
+    "hotstar",
+    "prime-video",
+    "disney-plus",
+    "imdb",
+    "rotten-tomatoes",
+    "metascore",
+    "movie-ratings",
+    "streaming",
+    "omdb-api"
+  ],
+  "author": {
+    "name": "Pankaj Tanwar",
+    "email": "contact@pankajtanwar.in",
+    "url": "https://pankajtanwar.in"
+  },
+  "contributors": [
+    {
+      "name": "IMDBuddy Contributors",
+      "url": "https://github.com/yourusername/IMDBuddy/graphs/contributors"
+    }
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/IMDBuddy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/IMDBuddy/issues"
+  },
+  "homepage": "https://github.com/yourusername/IMDBuddy#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "devDependencies": {},
+  "dependencies": {},
+  "browserslist": [
+    "Chrome >= 88"
+  ],
+  "manifest": {
+    "version": 3,
+    "permissions": [
+      "storage"
+    ],
+    "host_permissions": [
+      "https://*.hotstar.com/*",
+      "https://*.disneyplus.com/*",
+      "https://*.netflix.com/*",
+      "https://*.primevideo.com/*",
+      "https://api.imdbapi.dev/*",
+      "http://www.omdbapi.com/*"
+    ]
+  },
+  "files": [
+    "content.js",
+    "popup.html",
+    "styles.css",
+    "manifest.json",
+    "images/",
+    "README.md",
+    "SETUP.md",
+    "CONTRIBUTING.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "directories": {
+    "example": "images/"
+  }
+}

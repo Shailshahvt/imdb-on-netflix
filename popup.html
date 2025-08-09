@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 340px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'SF Pro Display', sans-serif;
+            background: #0f0f0f;
+            color: #ffffff;
+            line-height: 1.5;
+        }
+
+        .container {
+            padding: 28px 24px 24px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 700;
+            color: #f5c518;
+            margin-bottom: 6px;
+            letter-spacing: -0.5px;
+        }
+
+        .tagline {
+            font-size: 15px;
+            color: #aaa;
+            font-weight: 400;
+            margin-bottom: 12px;
+        }
+
+        .description {
+            font-size: 13px;
+            color: #ccc;
+            line-height: 1.4;
+            max-width: 280px;
+            margin: 0 auto;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-between;
+            margin: 24px 0;
+            padding: 16px;
+            background: #1a1a1a;
+            border-radius: 12px;
+            border: 1px solid #333;
+        }
+
+        .stat {
+            text-align: center;
+            flex: 1;
+        }
+
+        .stat-number {
+            font-size: 24px;
+            font-weight: 600;
+            color: #f5c518;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 11px;
+            color: #aaa;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-top: 2px;
+        }
+
+        .ratings-section {
+            margin-bottom: 24px;
+        }
+
+        .ratings-title {
+            font-size: 12px;
+            color: #aaa;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+            text-align: center;
+        }
+
+        .ratings-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+
+        .rating-card {
+            background: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 12px;
+            text-align: center;
+            transition: all 0.2s ease;
+        }
+
+        .rating-card:hover {
+            border-color: #f5c518;
+            transform: translateY(-1px);
+        }
+
+        .rating-logo {
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .imdb-card .rating-logo {
+            color: #f5c518;
+        }
+
+        .omdb-card .rating-logo {
+            color: #00b894;
+        }
+
+        .rating-description {
+            font-size: 10px;
+            color: #ccc;
+            line-height: 1.3;
+        }
+
+        .platforms {
+            margin-bottom: 24px;
+        }
+
+        .platforms-title {
+            font-size: 12px;
+            color: #aaa;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+            text-align: center;
+        }
+
+        .platform-list {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .platform-badge {
+            background: #1a1a1a;
+            border: 1px solid #333;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 500;
+            color: #ccc;
+            transition: all 0.2s ease;
+        }
+
+        .platform-badge.active {
+            background: #f5c518;
+            border-color: #f5c518;
+            color: #000;
+        }
+
+        .footer {
+            text-align: center;
+            border-top: 1px solid #333;
+            padding-top: 16px;
+            margin-top: 8px;
+        }
+
+        .creator-link {
+            color: #aaa;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        .creator-link:hover {
+            color: #f5c518;
+        }
+
+        .version {
+            position: absolute;
+            top: 12px;
+            right: 16px;
+            font-size: 10px;
+            color: #666;
+            font-weight: 500;
+        }
+
+        .status-indicator {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background: #f5c518;
+            border-radius: 50%;
+            margin-right: 6px;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.3; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="version">v4.0</div>
+    
+    <div class="container">
+        <div class="header">
+            <div class="logo">IMDBuddy</div>
+            <div class="tagline">
+                <span class="status-indicator"></span>
+                Smart ratings for streaming
+            </div>
+            <div class="description">
+                Never wonder "Is this worth watching?" again. See trusted IMDb and Rotten Tomatoes ratings instantly on any streaming platform.
+            </div>
+        </div>
+
+        <div class="stats">
+            <div class="stat">
+                <span class="stat-number">✨</span>
+                <span class="stat-label">Dual Ratings</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">⚡</span>
+                <span class="stat-label">Instant Results</span>
+            </div>
+        </div>
+
+        <div class="ratings-section">
+            <div class="ratings-title">Rating Sources</div>
+            <div class="ratings-grid">
+                <div class="rating-card imdb-card">
+                    <div class="rating-logo">IMDb</div>
+                    <div class="rating-description">User ratings from millions of moviegoers worldwide</div>
+                </div>
+                <div class="rating-card omdb-card">
+                    <div class="rating-logo">OMDB</div>
+                    <div class="rating-description">Multiple sources including RT, Metascore & more</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="platforms">
+            <div class="platforms-title">Supported Platforms</div>
+            <div class="platform-list">
+                <span class="platform-badge active">Hotstar</span>
+                <span class="platform-badge">Disney+</span>
+                <span class="platform-badge">Netflix</span>
+                <span class="platform-badge">Prime Video</span>
+            </div>
+        </div>
+
+        <div class="footer">
+            <a href="https://x.com/intent/user?screen_name=the2ndfloorguy" class="creator-link" target="_blank">@the2ndfloorguy</a>
+        </div>
+    </div>
+</body>
+</html>

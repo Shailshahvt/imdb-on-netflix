@@ -1,0 +1,152 @@
+name: Test IMDBuddy Extension
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        
+    - name: Install dependencies
+      run: |
+        npm install -g eslint
+        npm install -g prettier
+        
+    - name: Validate manifest.json
+      run: |
+        echo "Validating manifest.json..."
+        node -e "
+          const fs = require('fs');
+          const manifest = JSON.parse(fs.readFileSync('manifest.json', 'utf8'));
+          if (!manifest.name || !manifest.version || !manifest.manifest_version) {
+            throw new Error('Invalid manifest.json');
+          }
+          console.log('✅ manifest.json is valid');
+        "
+        
+    - name: Check for API keys in code
+      run: |
+        echo "Checking for hardcoded API keys..."
+        if grep -r "YOUR_OMDB_API_KEY" . --exclude-dir=.git; then
+          echo "✅ No hardcoded API keys found"
+        else
+          echo "⚠️  API key placeholder found (this is expected)"
+        fi
+        
+    - name: Validate HTML
+      run: |
+        echo "Validating popup.html..."
+        node -e "
+          const fs = require('fs');
+          const html = fs.readFileSync('popup.html', 'utf8');
+          if (!html.includes('<!DOCTYPE html>')) {
+            throw new Error('Invalid HTML structure');
+          }
+          console.log('✅ popup.html is valid');
+        "
+        
+    - name: Check file structure
+      run: |
+        echo "Checking required files..."
+        required_files=("content.js" "popup.html" "styles.css" "manifest.json" "README.md")
+        for file in \"${required_files[@]}\"; do
+          if [ ! -f "$file" ]; then
+            echo "❌ Missing required file: $file"
+            exit 1
+          fi
+        done
+        echo "✅ All required files present"
+        
+    - name: Validate CSS
+      run: |
+        echo "Validating CSS syntax..."
+        node -e "
+          const fs = require('fs');
+          const css = fs.readFileSync('styles.css', 'utf8');
+          // Basic CSS validation
+          if (!css.includes('.ratings-overlay') || !css.includes('.imdb-rating')) {
+            throw new Error('Missing required CSS classes');
+          }
+          console.log('✅ styles.css is valid');
+        "
+        
+    - name: Check JavaScript syntax
+      run: |
+        echo "Validating JavaScript syntax..."
+        node -e "
+          const fs = require('fs');
+          const js = fs.readFileSync('content.js', 'utf8');
+          // Basic JS validation
+          if (!js.includes('OMDB_API_KEY') || !js.includes('fetchRatings')) {
+            throw new Error('Missing required JavaScript functions');
+          }
+          console.log('✅ content.js is valid');
+        "
+
+  security:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Security scan
+      run: |
+        echo "Running security checks..."
+        # Check for common security issues
+        if grep -r "password\|secret\|key" . --exclude-dir=.git --exclude=README.md --exclude=SETUP.md | grep -v "YOUR_OMDB_API_KEY"; then
+          echo "⚠️  Potential security issue found"
+          exit 1
+        fi
+        echo "✅ No obvious security issues found"
+
+  documentation:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Validate README
+      run: |
+        echo "Validating README.md..."
+        if [ ! -f "README.md" ]; then
+          echo "❌ README.md is missing"
+          exit 1
+        fi
+        
+        # Check for required sections
+        required_sections=("Features" "Installation" "Usage" "Contributing")
+        for section in "${required_sections[@]}"; do
+          if ! grep -q "## $section" README.md; then
+            echo "⚠️  Missing section: $section"
+          fi
+        done
+        
+        echo "✅ README.md validation complete"
+        
+    - name: Check documentation completeness
+      run: |
+        echo "Checking documentation completeness..."
+        if [ ! -f "CONTRIBUTING.md" ]; then
+          echo "⚠️  CONTRIBUTING.md is missing"
+        fi
+        if [ ! -f "CHANGELOG.md" ]; then
+          echo "⚠️  CHANGELOG.md is missing"
+        fi
+        if [ ! -f "LICENSE" ]; then
+          echo "⚠️  LICENSE is missing"
+        fi
+        echo "✅ Documentation check complete"

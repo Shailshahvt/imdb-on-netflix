@@ -1,0 +1,44 @@
+{
+    "manifest_version": 3,
+    "name": "IMDBuddy - IMDb & Rotten Tomatoes Ratings for Streaming",
+    "short_name": "IMDBuddy",
+    "version": "4.0.0",
+    "author": "Pankaj Tanwar",
+    "description": "Get instant IMDb and Rotten Tomatoes ratings while browsing Netflix, Hotstar, Prime Video & other streaming platforms.",
+    "permissions": [
+        "storage"
+    ],
+    "host_permissions": [
+        "https://*.hotstar.com/*",
+        "https://*.disneyplus.com/*",
+        "https://*.netflix.com/*",
+        "https://*.primevideo.com/*",
+        "https://api.imdbapi.dev/*",
+        "http://www.omdbapi.com/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*.hotstar.com/*",
+                "https://*.disneyplus.com/*",
+                "https://*.netflix.com/*",
+                "https://*.primevideo.com/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "css": [
+                "styles.css"
+            ]
+        }
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_title": "IMDBuddy - Smart Ratings for Streaming"
+    },
+    "icons": {
+        "16": "images/icon.png",
+        "48": "images/icon.png",
+        "128": "images/icon.png"
+    }
+}
