@@ -4,6 +4,7 @@ A Chrome extension that displays **IMDb**, **Rotten Tomatoes**, and **Metascore*
 
 ![imdb-on-netflix Demo](images/demo.png)
 
+
 ## ✨ Features
 
 - **🎯 Multi-Source Ratings**: See IMDb, Rotten Tomatoes, and Metascore scores
